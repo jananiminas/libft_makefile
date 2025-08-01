@@ -25,3 +25,13 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+// void to_upper_even(unsigned int i, char *c)
+// 
+// 
+// int main(void)
+// {
+// 	char str[] = "abcdef";
+// 	ft_striteri(str, to_upper_even);
+// 	printf("%s\n", str);
+// }
