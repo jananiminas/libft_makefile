@@ -6,11 +6,8 @@
 /*   By: jaa-s <jaa-s@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 20:36:55 by jaa-s             #+#    #+#             */
-<<<<<<< HEAD
 /*   Updated: 2025/08/01 13:34:39 by jaa-s            ###   ########.fr       */
-=======
 /*   Updated: 2025/08/01 13:47:47 by jaa-s            ###   ########.fr       */
->>>>>>> libft
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +74,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_fill(split, s, c));
 }
-<<<<<<< HEAD
-=======
 
 // int	main(void)
 // {
@@ -93,4 +88,3 @@ char	**ft_split(char const *s, char c)
 // 	}
 // 	free(words);
 // }
->>>>>>> libft
