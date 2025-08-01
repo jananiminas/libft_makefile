@@ -12,81 +12,68 @@
 
 #include "libft.h"
 
-static int	count_words(const char *s, char c)
+static size_t	ft_count(const char *s, char c)
 {
-	int	count;
-	int	in_word;
+	size_t	count;
 
 	count = 0;
-	in_word = 0;
 	while (*s)
 	{
-		if (*s != c && in_word == 0)
+		if (*s != c)
 		{
-			in_word = 1;
-			count++;
+			++count;
+			while (*s && *s != c)
+				++s;
 		}
-		else if (*s == c)
-			in_word = 0;
-		s++;
+		else
+			++s;
 	}
 	return (count);
 }
 
-static char	*word_dup(const char *start, int len)
+static void	ft_free_all(char **split, size_t i)
 {
-	char	*word;
-	int		i;
-
-	word = malloc(len + 1);
-	if (!word)
-		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		word[i] = start[i];
-		i++;
-	}
-	word[i] = '\0';
-	return (word);
+	while (i > 0)
+		free(split[--i]);
+	free(split);
 }
 
-static void	split_words(const char *s, char c, char **result)
+static char	**ft_fill(char **split, const char *s, char c)
 {
-	int	i;
-	int	index;
-	int	len;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
-	index = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (s[i] != c)
+		if (*s != c)
 		{
 			len = 0;
-			while (s[i + len] && s[i + len] != c)
-				len++;
-			result[index++] = word_dup(s + i, len);
-			i += len;
+			while (*s && *s != c && ++len)
+				s++;
+			split[i] = ft_substr(s - len, 0, len);
+			if (!split[i++])
+				return (ft_free_all(split, i), NULL);
 		}
 		else
-			i++;
+			s++;
 	}
-	result[index] = NULL;
+	split[i] = NULL;
+	return (split);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**result;
+	char	**split;
 
 	if (!s)
 		return (NULL);
-	result = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!result)
+	split = malloc(sizeof(char *) * (ft_count(s, c) + 1));
+	if (!split)
 		return (NULL);
-	split_words(s, c, result);
-	return (result);
+	return (ft_fill(split, s, c));
 }
+
 
 // int	main(void)
 // {
