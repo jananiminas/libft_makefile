@@ -33,3 +33,11 @@ char	*ft_strdup(const char *s1)
 	dup[i] = '\0';
 	return (dup);
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char *dup = ft_strdup("wellgoing");
+// 	printf("%s", dup);
+// 	free(dup);
+// }
