@@ -23,10 +23,10 @@ static size_t	ft_count(const char *s, char c)
 		{
 			++count;
 			while (*s && *s != c)
-				++s;
+				s++;
 		}
 		else
-			++s;
+			s++;
 	}
 	return (count);
 }
