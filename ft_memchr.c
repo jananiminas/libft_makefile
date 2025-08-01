@@ -25,3 +25,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char str[] = "how are you";
+// 	char *result = ft_memchr(str, 'r', 8);
+// 
+// 	if (result)
+// 		printf("Found: '%c'\n", *result);
+// 	else
+// 		printf("Not found\n");
+// 
+// }
