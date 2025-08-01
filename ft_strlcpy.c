@@ -32,3 +32,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		slen++;
 	return (slen);
 }
+
+// int	main(void)
+// {
+// 	char dst[10];
+// 	size_t len = ft_strlcpy(dst, "Hello, World!", sizeof(dst));
+// 	printf("Copied: \"%s\"\n", dst);
+// 	printf("Length of src: %zu\n", len);
+// } 
