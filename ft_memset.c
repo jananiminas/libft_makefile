@@ -23,3 +23,14 @@ void	*ft_memset(void *b, int c, size_t len)
 		*ptr++ = x;
 	return (b);
 }
+
+// int	main(void)
+// {
+// 	char buffer[11];
+// 
+// 	ft_memset(buffer, 'j', 10); 
+// 	buffer[10] = '\0';          
+// 
+// 	printf("Char buffer: %s\n", buffer); 
+// 	return (0);
+// }
