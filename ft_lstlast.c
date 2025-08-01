@@ -20,3 +20,17 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+
+// int	main(void)
+// {
+// 	t_list *a = ft_lstnew("1st");
+// 	t_list *b = ft_lstnew("2nd");
+// 	t_list *c = ft_lstnew("3rd");
+// 
+// 	ft_lstadd_back(&a, b);
+// 	ft_lstadd_back(&a, c);
+// 
+// 	t_list *last = ft_lstlast(a);
+// 	if (last)
+// 		printf("Last node content: %s\n", (char *)last->content);
+// }
