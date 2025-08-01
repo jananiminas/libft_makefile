@@ -24,3 +24,16 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+
+// int	main(void)
+// {
+// 	t_list *a = ft_lstnew("one");
+// 	t_list *b = ft_lstnew("two");
+// 	t_list *c = ft_lstnew("three");
+// 
+// 	ft_lstadd_front(&a, b);
+// 	ft_lstadd_front(&b, c);
+// 
+// 	printf("List size: %d\n", ft_lstsize(c));
+// 	return (0);
+// }
