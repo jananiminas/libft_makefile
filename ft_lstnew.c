@@ -23,3 +23,11 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+
+// int	main(void)
+// {
+// 	t_list *node = ft_lstnew("42AbuDhabi");
+// 	if (node)
+// 		printf("Content: %s\n", (char *)node->content);
+// 	free(node);
+// }
