@@ -23,3 +23,8 @@ void	ft_putstr_fd(char *s, int fd)
 		l++;
 	}
 }
+
+// int	main(void)
+// {
+// 	ft_putstr_fd("it's mee\n", 1);
+// }
