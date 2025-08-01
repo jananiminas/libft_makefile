@@ -30,3 +30,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int	main(void)
+// {
+// 	char src[] = "Hello, 42!";
+// 	char dest[20];
+// 
+// 	ft_memcpy(dest, src, 8);
+// 
+// 	printf("Source: %s\n", src);
+// 	printf("Copied: %s\n", dest);
+// 
+// 	return (0);
+// }
