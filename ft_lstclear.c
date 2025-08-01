@@ -25,3 +25,20 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = tmp;
 	}
 }
+
+// void	delete_content(void *content)
+// {
+// 	free(content);
+// }
+// 
+// int	main(void)
+// {
+// 	t_list *n1 = ft_lstnew(strdup("A"));
+// 	t_list *n2 = ft_lstnew(strdup("B"));
+// 	t_list *n3 = ft_lstnew(strdup("C"));
+// 
+// 	n1->next = n2;
+// 	n2->next = n3;
+// 
+// 	ft_lstclear(&n1, delete_content);
+// }
