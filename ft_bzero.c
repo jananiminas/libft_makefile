@@ -25,3 +25,11 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+// int	main(void)
+// {
+// 	char str[10] = "outline";
+// 	printf("Before bzero:%s\n", str);
+// 	ft_bzero(str, 3);
+// 	printf("After bzero:%s\n", str + 3);
+// }
