@@ -33,3 +33,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+// int	main(void)
+// {
+// 	char data[] = "123456789";
+// 
+// 	ft_memmove(data + 2, data, 5);
+// 	printf("Result after memmove: %s\n", data);
+// 
+// }
