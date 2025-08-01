@@ -19,3 +19,10 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putstr_fd("\n", fd);
 }
+
+// int	main(void)
+// {
+// 	ft_putendl_fd("Timeline", 1); 
+// 	ft_putendl_fd("", 1);
+// 	ft_putendl_fd("libft", 1);          
+// }
