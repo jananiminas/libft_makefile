@@ -31,3 +31,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
+
+// char	add_index(unsigned int i, char c)
+// {
+// 	return (c + i);
+// }
+// 
+// int	main(void)
+// {
+// 	char *s = "abcde";
+// 	char *new = ft_strmapi(s, add_index);
+// 
+// 	printf("Original: %s\n", s);
+// 	printf("Mapped:   %s\n", new);
+// 
+// 	free(new);
+// 	return (0);
+// }
