@@ -26,3 +26,18 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	char a[] = "abcde";
+// 	char b[] = "abcdf";
+//
+// 	int result = ft_memcmp(a, b, 5);
+//
+// 	if (result == 0)
+// 		printf("equal\n");
+// 	else if (result < 0)
+// 		printf("a < b\n");
+// 	else
+// 		printf("a > b\n");
+// }
