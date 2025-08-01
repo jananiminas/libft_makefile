@@ -18,3 +18,10 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalnum('J'));
+// 	printf("%d\n", ft_isalnum('3'));
+// 	printf("%d\n", ft_isalnum('#'));
+// }
