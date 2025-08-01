@@ -38,3 +38,11 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
+
+// int	main(void)
+// {        
+// 	printf("%d\n", ft_atoi("-333"));          
+// 	printf("%d\n", ft_atoi("2147483647"));
+// 	printf("%d\n", ft_atoi("--++-2147"));
+// 	printf("%d\n", ft_atoi("-2147483647")); 
+// }
