@@ -26,3 +26,18 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last = ft_lstlast(*lst);
 	last->next = new;
 }
+
+// int	main(void)
+// {
+// 	t_list *head = ft_lstnew("First");
+// 	t_list *second = ft_lstnew("Second");
+// 
+// 	ft_lstadd_back(&head, second);
+// 
+// 	t_list *tmp = head;
+// 	while (tmp)
+// 	{
+// 		printf("%s\n", (char *)tmp->content);
+// 		tmp = tmp->next;
+// 	}
+// }
