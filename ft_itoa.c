@@ -53,3 +53,14 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+// int main(void)
+// {
+// 	char *s1 = ft_itoa(1234);
+// 	char *s2 = ft_itoa(-567);
+// 	char *s3 = ft_itoa(0);
+// 
+//     printf("s1 = \"%s\"\n", s1);
+//     printf("s2 = \"%s\"\n", s2);
+//     printf("s3 = \"%s\"\n", s3);
+// }
